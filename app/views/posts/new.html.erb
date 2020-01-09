@@ -1,0 +1,21 @@
+<div class="post-new-back">
+  <h2 class="post-new-title">投稿ページ</h2>
+  <%= form_for @post do |f| %>
+    <h4>：画像</h4>
+    <div id="img_field" onClick="$('#file').click()" >
+      <% if @post.image.attached? %>
+        <%= image_tag(rails_blob_path(@post.image),:size => "50x50") %>
+      <% else %>
+        <i class="fas fa-image"></i><i class="fas fa-file-upload add"></i>
+      <% end %>
+    </div>
+    <%= f.file_field :image, class: "image", style: "display:none;", id: "file"%>
+    <h4>：タイトル</h4>
+    <%= f.text_field :title , class:"title-field"%>
+    <h4>：内容</h4>
+    <%= f.text_area :text, class:"text-field post-new-field" %>
+    <%= f.submit "投稿", class:"submit-btn post-new-field"%>
+  <% end %>  
+  
+
+</div>

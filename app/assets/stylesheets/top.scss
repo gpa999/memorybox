@@ -1,0 +1,74 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@media screen and (min-width: 600px) {
+    .top-index-image {
+        background-size:cover;
+        width:56vw;;
+        height:35vw;;
+        margin:auto;
+        margin-top:8vh;
+        position: relative;
+        border-radius:3px;
+    }
+    .top-index-back {
+        width: 64vw;
+        margin:5vh auto;
+        padding-bottom: 8vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+    }
+    .top-index-title {
+        position: absolute;
+        bottom: 10px;
+        margin-left: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Noto Serif JP', serif;
+        background: rgba(169,169,169,0.3);
+        padding:5px;
+        border-radius:3px;
+    }
+    .top-index-title:hover {
+        color:#6496e8;
+        border-bottom:solid 1px #6496e8;
+        border-left:solid 1px #6496e8;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-index-image {
+        background-size:cover;
+        width:80vw;;
+        height:50vw;;
+        margin:auto;
+        margin-top:5vh;
+        position: relative;
+        border-radius:3px;
+    }
+    .top-index-back {
+        width: 90vw;
+        margin:3vh auto;
+        padding-bottom: 5vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+    }
+    .top-index-title {
+        position: absolute;
+        bottom: 10px;
+        margin-left: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Noto Serif JP', serif;
+        background: rgba(169,169,169,0.3);
+        padding:5px;
+        border-radius:3px;
+        border-bottom:solid 1px #6496e8;
+        border-left:solid 1px #6496e8;
+    }
+}
+
+

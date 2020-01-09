@@ -1,0 +1,9 @@
+<div class="top-index-back">
+  <% @posts.each do |post| %>
+    <div class="top-index-image" style="background-image: url(<%= rails_blob_path(post.image) %>)">
+      <a href="/posts/<%= post.id %>" class="top-index-title">
+        <%=post.title %>
+      </a>
+    </div>
+  <% end %>  
+</div>

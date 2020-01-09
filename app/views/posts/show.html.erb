@@ -1,0 +1,13 @@
+<div class="post-show-back" >  
+  <%= image_tag(rails_blob_path(@post.image), class:"post-show-image post-show-content") %>
+  <div class="post-show-content post-show-title">
+    <h1><%= @post.title %></h1>
+  </div>
+  <div class="post-show-content post-show-text">
+    <%= @post.text %>
+  </div>
+  <% if @post.user == current_user %>
+    <a href="/posts/<%= @post.id %>/edit" class="post-show-edit-btn">編集</a>
+    <a href="/" class="post-show-destroy-btn">削除</a>
+  <% end %>
+</div>

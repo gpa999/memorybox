@@ -1,3 +1,348 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@media screen and (min-width: 600px) {
+    .post-new-back {
+        width: 60vw;
+        height: 100vh;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        border: solid 3px #ffffff;
+        border-radius: 5px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .post-new-title {
+        color: #6496e8;
+        margin-left: 4vw;
+        border-bottom: double 5px #6496e8;
+        width: 140px;
+        padding-left: 10px;
+    }
+
+    #img_field {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 3vw;
+        padding: 5px 8px;
+        border: solid 1px #6496e8;
+        color: #666;
+        position: relative;
+        padding: 0;
+        padding-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 400px;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+      }
+      
+      #img_field i {
+        font-size: 100px;
+        color: #aaa;
+        line-height: 250px;
+        transition: 0.3s ease-out;
+      }
+      
+      #img_field i.add {
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+      }
+      
+      #img_field:hover {
+        background-color: #6496e8;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }
+      
+      #img_field:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      .post-new-field {
+          display: block;
+      }
+      .title-field {
+          width:30vw;
+          height: 5vh;
+          border-radius:10px;
+          margin-left:3vw;
+          margin-top: 5px;
+          border:none;
+      }
+      .text-field {
+          margin-left:3vw;
+          margin-top: 5px;
+          width:50vw;
+          height: 7vh;
+          border-radius:10px;
+          border:none;
+      }
+      textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 2px solid #6496e8;
+        background-color: #ffffff;
+      }
+      h4 {
+          margin-left:3vw;
+          font-size:20px;
+          margin-bottom:5px;
+      }
+      .submit-btn {
+          width: 90px;
+          height: 40px;
+          margin: auto;
+          margin-top: 8vh;
+          border-radius: 5px;
+          background:#6496e8;
+          color:#ffffff;
+          border:none;
+      }
+
+      .post-show-back {
+        width: 64vw;
+        margin:5vh auto;
+        padding-bottom: 8vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+      }
+
+      .post-show-content {
+          display: block;
+          font-family: 'Noto Serif JP', serif;
+      }
+
+      .post-show-image {
+          width: 56vw;
+          height: 35vw;
+          object-fit: cover;
+          margin: auto;
+          margin-top:5vh;
+          border-radius:3px;
+      }
+      .post-show-title {
+          margin-left: 5vw;
+          margin-top:30px;
+      }
+      .post-show-text {
+          margin-left: 5vw;
+          margin-top:40px;
+          font-size:20px;
+          color: #666666;
+      }
+      .post-show-edit-btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: rgba(169,169,169,0.5);
+        border-left: solid 2px #6496e8;
+        color: #6496e8;/*文字色*/
+        font-weight: bold;
+        font-family: 'Noto Serif JP', serif;
+        margin-left: 5vw;
+        margin-top: 80px;
+    }
+
+    .post-show-edit-btn:hover {
+        color:#28b9ff;
+        border-left: solid 2px #28b9ff
+    }
+
+    .post-show-destroy-btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: rgba(169,169,169,0.5);
+        border-left: solid 2px #6496e8;
+        color: #6496e8;/*文字色*/
+        font-weight: bold;
+        font-family: 'Noto Serif JP', serif;
+        margin-left: 1vw;
+    }
+
+    .post-show-destroy-btn:hover {
+        color:#28b9ff;
+        border-left: solid 2px #28b9ff
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .post-new-back {
+        width: 340px;
+        height: 100vh;
+        margin:auto;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        border: solid 3px #ffffff;
+        border-radius: 5px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .post-new-title {
+        color: #6496e8;
+        margin-left: 4vw;
+        border-bottom: double 5px #6496e8;
+        width: 140px;
+        padding-left: 10px;
+    }
+
+    #img_field {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 3vw;
+        border: solid 1px #6496e8;
+        color: #666;
+        position: relative;
+        padding-top: 0;
+        padding-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 320px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+      }
+      
+      #img_field i {
+        font-size: 100px;
+        color: #aaa;
+        line-height: 200px;
+        transition: 0.3s ease-out;
+      }
+      
+      #img_field i.add {
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -70px;
+        right: 15px;
+      }
+      
+      #img_field:hover {
+        background-color: #6496e8;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }
+      
+      #img_field:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      .post-new-field {
+          display: block;
+      }
+      .title-field {
+          width:320px;
+          height: 5vh;
+          border-radius:10px;
+          margin-left:3vw;
+          margin-top: 5px;
+          border:none;
+      }
+      .text-field {
+          margin-left:3vw;
+          margin-top: 5px;
+          width:320px;
+          height: 9vh;
+          border-radius:10px;
+          border:none;
+      }
+      textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 2px solid #6496e8;
+        background-color: #ffffff;
+      }
+      h4 {
+          margin-left:3vw;
+          font-size:20px;
+          margin-bottom:5px;
+      }
+      .submit-btn {
+          width: 90px;
+          height: 40px;
+          margin: auto;
+          margin-top: 8vh;
+          border-radius: 5px;
+          background:#6496e8;
+          color:#ffffff;
+          border:none;
+      }
+
+      .post-show-back {
+        width: 90vw;
+        margin:3vh auto;
+        padding-bottom: 5vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+      }
+
+      .post-show-content {
+          display: block;
+          font-family: 'Noto Serif JP', serif;
+      }
+
+      .post-show-image {
+          width: 80vw;
+          height: 50vw;
+          object-fit: cover;
+          margin: auto;
+          margin-top:5vh;
+          border-radius:3px;
+      }
+      .post-show-title {
+          margin-left: 7vw;
+          margin-top:30px;
+          font-size:10px
+      }
+      .post-show-text {
+          margin-left: 7vw;
+          margin-top:40px;
+          font-size:13px;
+          color: #666666;
+      }
+
+      .post-show-edit-btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: rgba(169,169,169,0.5);
+        border-left: solid 2px #6496e8;
+        color: #6496e8;/*文字色*/
+        font-weight: bold;
+        font-family: 'Noto Serif JP', serif;
+        margin-left: 6vw;
+        margin-top: 80px;
+    }
+
+    .post-show-destroy-btn {
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: rgba(169,169,169,0.5);
+        border-left: solid 2px #6496e8;
+        color: #6496e8;/*文字色*/
+        font-weight: bold;
+        font-family: 'Noto Serif JP', serif;
+        margin-left: 3vw;
+    }
+}

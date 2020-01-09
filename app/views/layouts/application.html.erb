@@ -6,7 +6,10 @@
     <%= csp_meta_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,8 +19,8 @@
     <a href="/" class="title grid-6">MemoryBox</a>
     <% if user_signed_in? %>
       <div class="user_nav grid-6">
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-        <a class="post" href="/tweets/new">投稿する</a>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post' %>
+        <a class="post" href="/posts/new">投稿する</a>
       </div>
     <% else %>
       <div class="user_nav grid-6">

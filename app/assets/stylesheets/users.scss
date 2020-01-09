@@ -1,3 +1,225 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@media screen and (min-width: 600px) {
+    .sign-up {
+        background-image: image-url('login.jpg');
+        background-size: cover;
+        width: 60vw;
+        padding-top:10vh;
+        height: 80vh;
+        margin-top: 5vh;
+    }
+    .sign-up-content {
+        background: rgba(128,128,128,0.5);
+        width: 300px;
+        height: 450px;
+        margin: auto;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    .sign-top {
+        margin-left:20px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .field {
+        margin-left:25px;
+        margin-top: 20px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .r-field {
+        margin-top: 5px;
+        width:13em;
+    }
+    .actions {
+        text-align:center;
+        margin-top: 20px;
+    }
+    .link-page {
+        text-align:center;
+        margin-top: 20px;
+    }
+    .register {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        position: relative;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        color: #000;
+        transition: .4s;
+        background: rgba(128,128,128,0.5);
+    }
+    .register:hover {
+        color:#0099e3;
+    }
+    .register:before, .register:after {
+        position: absolute;
+        top: 0;
+        content:'';
+        width: 8px;
+        height: 100%;
+        display: inline-block;
+      }
+    .register:before {
+        border-left: solid 1px #0099e3;
+        border-top: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        left: 0;
+    }
+    .register:after {
+        content: '';
+        border-top: solid 1px #0099e3;
+        border-right: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        right: 0;
+    }
+    .log-in {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        position: relative;
+        padding: 0.3em 0.5em;
+        text-decoration: none;
+        color: #000;
+        transition: .4s;
+        background: rgba(128,128,128,0.5);
+    }
+    .log-in:hover {
+        color:#0099e3;
+    }
+    .log-in:before, .register:after {
+        position: absolute;
+        top: 0;
+        content:'';
+        width: 8px;
+        height: 100%;
+        display: inline-block;
+      }
+    .log-in:before {
+        border-left: solid 1px #0099e3;
+        border-top: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        left: 0;
+    }
+    .log-in:after {
+        content: '';
+        border-top: solid 1px #0099e3;
+        border-right: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        right: 0;
+    }
+}
+@media screen and (max-width: 600px) { 
+    .sign-up {
+        background-image: image-url('login.jpg');
+        background-size: cover;
+        width: 100vw;
+        padding-top:10vh;
+        height: 80vh;
+        margin-top: 5vh;
+    }
+    .sign-up-content {
+        background: rgba(128,128,128,0.5);
+        width: 300px;
+        height: 450px;
+        margin: auto;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    .sign-top {
+        margin-left:20px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .field {
+        margin-left:25px;
+        margin-top: 20px;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .r-field {
+        margin-top: 5px;
+        width:13em;
+    }
+    .actions {
+        text-align:center;
+        margin-top: 20px;
+    }
+    .link-page {
+        text-align:center;
+        margin-top: 20px;
+    }
+    .register {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        position: relative;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        color: #000;
+        transition: .4s;
+        background: rgba(128,128,128,0.5);
+    }
+    .register:hover {
+        color:#0099e3;
+    }
+    .register:before, .register:after {
+        position: absolute;
+        top: 0;
+        content:'';
+        width: 8px;
+        height: 100%;
+        display: inline-block;
+      }
+    .register:before {
+        border-left: solid 1px #0099e3;
+        border-top: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        left: 0;
+    }
+    .register:after {
+        content: '';
+        border-top: solid 1px #0099e3;
+        border-right: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        right: 0;
+    }
+    .log-in {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        position: relative;
+        padding: 0.3em 0.5em;
+        text-decoration: none;
+        color: #000;
+        transition: .4s;
+        background: rgba(128,128,128,0.5);
+    }
+    .log-in:hover {
+        color:#0099e3;
+    }
+    .log-in:before, .register:after {
+        position: absolute;
+        top: 0;
+        content:'';
+        width: 8px;
+        height: 100%;
+        display: inline-block;
+      }
+    .log-in:before {
+        border-left: solid 1px #0099e3;
+        border-top: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        left: 0;
+    }
+    .log-in:after {
+        content: '';
+        border-top: solid 1px #0099e3;
+        border-right: solid 1px #0099e3;
+        border-bottom: solid 1px #0099e3;
+        right: 0;
+    }
+}
+.forgot-case {
+    display:block;
+    margin-top:8px;
+}
