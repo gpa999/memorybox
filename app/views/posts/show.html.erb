@@ -8,6 +8,6 @@
   </div>
   <% if @post.user == current_user %>
     <a href="/posts/<%= @post.id %>/edit" class="post-show-edit-btn">編集</a>
-    <a href="/" class="post-show-destroy-btn">削除</a>
+    <a href="/posts/<%= @post.id %>/destroy_confirm" class="post-show-destroy-btn">削除</a>
   <% end %>
 </div>

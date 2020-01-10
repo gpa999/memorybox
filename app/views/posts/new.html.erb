@@ -3,11 +3,7 @@
   <%= form_for @post do |f| %>
     <h4>：画像</h4>
     <div id="img_field" onClick="$('#file').click()" >
-      <% if @post.image.attached? %>
-        <%= image_tag(rails_blob_path(@post.image),:size => "50x50") %>
-      <% else %>
-        <i class="fas fa-image"></i><i class="fas fa-file-upload add"></i>
-      <% end %>
+      <i class="fas fa-image"></i><i class="fas fa-file-upload add"></i>
     </div>
     <%= f.file_field :image, class: "image", style: "display:none;", id: "file"%>
     <h4>：タイトル</h4>

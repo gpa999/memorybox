@@ -1,1 +1,18 @@
-ccc
+<div class="post-new-back">
+  <h2 class="post-new-title">編集ページ</h2><br/>
+  <div class="edit-description">編集内容を書き込んでください。</div>
+  <%= form_for @post do |f| %>
+    <h4>：画像</h4>
+    <div id="img_field" onClick="$('#file').click()" >
+      <i class="fas fa-image"></i><i class="fas fa-file-upload add"></i>
+    </div>
+    <%= f.file_field :image, class: "image", style: "display:none;", id: "file"%>
+    <h4>：タイトル</h4>
+    <%= f.text_field :title , class:"title-field"%>
+    <h4>：内容</h4>
+    <%= f.text_area :text, class:"text-field post-new-field" %>
+    <%= f.submit "変更", class:"submit-btn post-new-field"%>
+  <% end %>  
+  
+
+</div>
