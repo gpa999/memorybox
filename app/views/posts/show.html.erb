@@ -6,8 +6,10 @@
   <div class="post-show-content post-show-text">
     <%= @post.text %>
   </div>
-  <% if @post.user == current_user %>
-    <a href="/posts/<%= @post.id %>/edit" class="post-show-edit-btn">編集</a>
-    <a href="/posts/<%= @post.id %>/destroy_confirm" class="post-show-destroy-btn">削除</a>
+  <% if user_signed_in? %>
+    <% if @post.user == current_user%>
+      <a href="/posts/<%= @post.id %>/edit" class="post-show-edit-btn">編集</a>
+      <a href="/posts/<%= @post.id %>/destroy_confirm" class="post-show-destroy-btn">削除</a>
+    <% end %>
   <% end %>
 </div>

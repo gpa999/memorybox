@@ -19,6 +19,18 @@
         border:solid 3px #ffffff;
         border-radius:5px;
     }
+    .new-top-index-back {
+        width: 64vw;
+        margin:5vh auto;
+        padding-bottom: 1vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+    }
+    .pagenation {
+        margin-top:7vh;
+        margin-left:1vw;
+        font-size:20px;
+    }
     .top-index-title {
         position: absolute;
         bottom: 10px;
@@ -36,6 +48,22 @@
         border-bottom:solid 1px #6496e8;
         border-left:solid 1px #6496e8;
     }
+
+    .top-index-user {
+        float:right;
+        background: rgba(169,169,169,0.3);
+        color:#ffffff;
+        margin:10px;
+        font-family: 'Noto Serif JP', serif;
+        padding:2px;
+    }
+    .top-index-user a {
+        color:#ffffff;
+    }
+    .top-index-user a:hover {
+        color:#00acff;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -68,6 +96,30 @@
         border-radius:3px;
         border-bottom:solid 1px #6496e8;
         border-left:solid 1px #6496e8;
+    }
+
+    .new-top-index-back {
+        width: 90vw;
+        margin:3vh auto;
+        padding-bottom: 0.5vh;
+        border:solid 3px #ffffff;
+        border-radius:5px;
+    }
+    .pagenation {
+        margin-top:4.5vh;
+        margin-left:1vw;
+    }
+
+    .top-index-user {
+        float:right;
+        background: rgba(169,169,169,0.3);
+        color:#ffffff;
+        margin:10px;
+        font-family: 'Noto Serif JP', serif;
+        padding:2px;
+    }
+    .top-index-user a {
+        color:#ffffff;
     }
 }
 

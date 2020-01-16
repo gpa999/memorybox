@@ -1,0 +1,21 @@
+<div class="user-edit-back">
+  <h2 class="user-edit-top">プロフィール編集</h2>
+  <%= form_for(@user, url: user_path(@user), html: {method: "patch"}) do |f| %>
+    <h4>：プロフィール画像</h4>
+    <% if @user.image.attached? %>
+      <%= image_tag(rails_blob_path(@user.image), class:"user-change-image current-user-image-top") %>
+    <% else %>
+      <i class="far fa-user fa-user-change current-user-image-top"></i>
+    <% end %>
+    <div class="current-user-image-top current-user-image-word">現在のプロフィール画像</div>
+    <div id="user_img_field" onClick="$('#file').click()" >
+      <i class="fas fa-user-plus"></i>
+    </div>
+    <%= f.file_field :image, class: "image", style: "display:none;", id: "file"%>
+    <h4>：名前</h4>
+    <div class="user-edit-field">
+      <%= f.text_field :name, class:"user-edit-name" %><br/>
+      <%= f.submit "変更", class:"user-profile-change-btn" %>
+    </div>
+  <% end %>
+</div>

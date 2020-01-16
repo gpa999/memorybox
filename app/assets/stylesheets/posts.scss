@@ -4,7 +4,7 @@
 @media screen and (min-width: 600px) {
     .post-new-back {
         width: 60vw;
-        height: 100vh;
+        min-height: 100vh;
         margin-top: 5vh;
         margin-bottom: 10vh;
         border: solid 3px #ffffff;
@@ -12,6 +12,11 @@
         font-family: 'Noto Serif JP', serif;
         padding-bottom:5vh;
     }
+      h4 {
+          margin-left:3vw;
+          font-size:20px;
+          margin-bottom:5px;
+      }
     .post-new-title {
         color: #6496e8;
         margin-left: 4vw;
@@ -99,11 +104,6 @@
         border: 2px solid #6496e8;
         background-color: #ffffff;
       }
-      h4 {
-          margin-left:3vw;
-          font-size:20px;
-          margin-bottom:5px;
-      }
       .submit-btn {
           width: 90px;
           height: 40px;
@@ -185,19 +185,81 @@
         border-left: solid 2px #28b9ff
     }
 
+    .current-image-description {
+        margin-left:4vw;
+        margin-top:10px;
+    }
+
+    .current-image {
+        width:200px;
+        height:125px;
+        object-fit:cover;
+        border-radius:3px;
+        margin-left:3.5vw;
+        margin-top:10px;
+    }
+
+    .destroy-confirm-message {
+        margin-left:5vw;
+        margin-top:5vh;
+        font-size:18px;
+    }
+
+    .delete-btn {
+        display:inline-block;
+        margin-left:6vw;
+        margin-top:30px;
+        text-decoration:none;
+        background:rgba(173,173,173,0.5);
+        color:#ff4600;
+        padding:5px 10px;
+        border-radius:3px;
+    }
+
+    .delete-btn:hover {
+        background:#ffffff;
+    }
+
+    .not-delete-btn {
+        display:inline-block;
+        margin-left:2vw;
+        text-decoration:none;
+        background:rgba(173,173,173,0.5);
+        color:#666666;
+        padding:5px 10px;
+        border-radius:3px;
+    }
+
+    .not-delete-btn:hover {
+        background:#ffffff;
+    }
+
+    .who-posts-index {
+        color: #6496e8;
+        border-bottom: double 5px #6496e8;
+        text-align:center;
+        margin-left: 4vw;
+        font-size:20px;
+    }
+
+    .space {
+        height:20px;
+    }
+
 
 }
 
 @media screen and (max-width: 600px) {
     .post-new-back {
         width: 340px;
-        height: 100vh;
+        min-height: 100vh;
         margin:auto;
         margin-top: 5vh;
         margin-bottom: 10vh;
         border: solid 3px #ffffff;
         border-radius: 5px;
         font-family: 'Noto Serif JP', serif;
+        padding-bottom:5vh;
     }
     .post-new-title {
         color: #6496e8;
@@ -255,6 +317,10 @@
         display: block;
         color: #fff;
       }
+
+      .edit-description {
+        margin-left:3vw;
+    }
 
       .post-new-field {
           display: block;
@@ -353,5 +419,31 @@
         font-weight: bold;
         font-family: 'Noto Serif JP', serif;
         margin-left: 3vw;
+    }
+
+    .current-image-description {
+        margin-left:5vw;
+        margin-top:10px;
+    }
+
+    .current-image {
+        width:160px;
+        height:100px;
+        object-fit:cover;
+        border-radius:3px;
+        margin-left:4vw;
+        margin-top:10px;
+    }
+
+    .who-posts-index {
+        color: #6496e8;
+        border-bottom: double 5px #6496e8;
+        text-align:center;
+        margin-left: 5vw;
+        font-size:16px;
+    }
+
+    .space {
+        height:20px;
     }
 }

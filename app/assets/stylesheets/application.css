@@ -35,12 +35,18 @@ body {
           text-decoration:none;
           font-family: 'Kaushan Script', cursive;
       }
+      .title:hover {
+        border-bottom:solid 2px #6496e8;
+      }
       .post {
           font-size: 20px;
           margin-left: 2vw;
           color: #ffffff;
           text-decoration: none;
           font-family: 'Noto Serif JP', serif;
+      }
+      .post:hover {
+        border-bottom:solid 2px #6496e8;
       }
       .user_nav {
           margin-left: 50vw;
@@ -60,6 +66,99 @@ body {
         color: #ffffff;
         text-align:center;
       }
+
+      .mobile-search-field {
+        display:none;
+      }
+      .user-info {
+        background:#bbbbbb;
+        width:20vw;
+        padding-bottom:1.5vw;
+        margin:auto;
+        margin-top:5vh;
+        border-radius:10px;
+        text-align:center;
+      }
+
+      .search-field {
+        background:#bbbbbb;
+        width:20vw;
+        padding-top:1.5vw;
+        padding-bottom:1.5vw;
+        margin:auto;
+        margin-top:6vh;
+        border-radius:6px;
+        text-align:center;
+      }
+
+      .search-contents {
+        display:inline-block;
+        vertical-align:middle;
+      }
+
+      .search-text {
+        border-radius:5px;
+        border:none;
+        width:14vw;
+        height:1.5vw;
+        margin-left:0.3vw;
+      }
+
+      .search-btn {
+        width:4vw;
+        height:2vw;
+        font-size:1.2vw;
+        border-radius:2px;
+        border:none;
+        margin-left:0.2vw;
+        background:#666666;
+        color:#ffffff;
+        font-family: 'Noto Serif JP', serif;
+        cursor: pointer;
+      }
+      .search-btn:hover {
+        background:#999999;
+      }
+      .fa-user-main {
+        border-radius:50%;
+        background:#ffffff;
+        width:4vw;
+        height:4vw;
+        padding:1.5vw;
+        font-size:4vw;
+        margin-top:1.5vw;
+    }
+
+    .user-main-image {
+      border-radius:50%;
+      width:6vw;
+      height:6vw;
+      margin-top:1.5vw;
+    }
+    .user-info-name {
+      font-size:30px;
+      margin-top:1vw;
+    }
+
+    .info-btn {
+      color:#184da3;
+      text-decoration: none;
+    }
+
+    .info-btn:hover {
+      color:#00acff;
+      border-bottom:solid 2px #00acff;
+    }
+
+    .side-menu {
+      display:block;
+      margin-left:5vw;
+      margin-top:20px;
+      font-size:18px;
+      font-family: 'Noto Serif JP', serif;
+      color:#6496e8;
+    }
+    
  }
 
 
@@ -101,13 +200,106 @@ body {
       .side {
         width: 100%;
         min-height: 20vh;
+        margin-bottom:10vh;
       }
       footer {
         background: #000000;
         color: #ffffff;
       }
- }
 
+      .user-info {
+        background:#bbbbbb;
+        width:80vw;
+        padding-bottom:7vw;
+        margin:auto;
+        margin-top:5vh;
+        border-radius:10px;
+        text-align:center;
+      }
+      .fa-user-main {
+        border-radius:50%;
+        background:#ffffff;
+        width:16vw;
+        height:16vw;
+        padding:6vw;
+        font-size:16vw;
+        margin-top:6vw;
+    }
+
+    .user-main-image {
+      border-radius:50%;
+      width:22.5vw;
+      height:22.5vw;
+      margin-top:6vw;
+    }
+
+    .user-info-name {
+      font-size:30px;
+      margin-top:5vw;
+    }
+
+    .info-btn {
+      color:#184da3;
+      text-decoration: none;
+      border-bottom:solid 2px #184da3;
+    }
+
+    .info-btn:hover {
+      color:#00acff;
+      border-bottom:solid 2px #00acff;
+    }
+
+    .side-menu {
+      display:block;
+      margin-left:10vw;
+      margin-top:20px;
+      font-size:16px;
+      font-family: 'Noto Serif JP', serif;
+      color:#6496e8;
+    }
+
+    .search-field {
+      display:none;
+    }
+
+    .mobile-search-field {
+      background:#555555;
+      padding:4vw;
+    }
+
+    .search-mobile-contents {
+      display:inline-block;
+      vertical-align:middle;
+    }
+
+    .search-mobile-text {
+      width:65vw;
+      border-radius:5px;
+      border:none;
+      margin-left:2.5vw;
+    }
+
+    .search-mobile-btn {
+      width:15vw;
+      background:#bbbbbb;
+      margin-right:2.5vw;
+      float:right;
+      border-radius:3px;
+      font-family: 'Noto Serif JP', serif;
+    }
+
+}
+.page-num {
+  color:#333333;
+}
+.page-num-btn {
+  color:#6496e8;
+  text-decoration:none;
+}
+.page-num-btn:hover {
+  color:#0000ff	;
+  border-bottom:solid 1px #0000ff; 
+}
  
 
   

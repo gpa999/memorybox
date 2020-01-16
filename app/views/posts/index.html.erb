@@ -1,1 +1,31 @@
-<h1>aaa</h1>
+<div class="new-top-index-back">
+  <div class="space"></div>
+  <% if @user == current_user %>
+  <span class="who-posts-index">あなたの投稿一覧</span>
+  <% else %>
+    <span class="who-posts-index"><%=@user.name%>さんの投稿一覧</span>
+  <% end %>
+  <% @posts.each do |post| %>
+    <div class="top-index-image" style="background-image: url(<%= rails_blob_path(post.image) %>)">
+      <a href="/posts/<%= post.id %>" class="top-index-title">
+        <%=post.title %>
+      </a>
+      <% if user_signed_in? %>
+        <% if post.user == current_user %>
+          <span class="top-index-user">
+            <a href=/users/<%= post.user.id %>">あなた</a>の投稿
+          </span>
+        <% else %>
+          <span class="top-index-user">
+            <a href=/users/<%= post.user.id %>"><%=post.user.name %></a>さんの投稿
+          </span>
+        <% end %>
+      <% else %>
+        <span class="top-index-user">
+          <a href=/users/<%= post.user.id %>"><%=post.user.name %></a>さんの投稿
+        </span>
+      <% end %>
+    </div>
+  <% end %>  
+  <div class="pagenation"><%= paginate @posts %></div>
+</div>

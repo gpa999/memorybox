@@ -1,1 +1,14 @@
-xxx
+<div class="destroy-confirm-message">
+  以下の投稿を本当に削除してもよろしいですか？
+</div>
+<%= link_to "削除", post_path(@post), method: :delete, class:"delete-btn" %>
+<%= link_to "戻る", :back, class:"not-delete-btn" %>
+<div class="post-show-back" >  
+  <%= image_tag(rails_blob_path(@post.image), class:"post-show-image post-show-content") %>
+  <div class="post-show-content post-show-title">
+    <h1><%= @post.title %></h1>
+  </div>
+  <div class="post-show-content post-show-text">
+    <%= @post.text %>
+  </div>
+</div>

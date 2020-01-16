@@ -1,0 +1,32 @@
+<div class="user-show-back">
+  <div class="user-profile">
+    <% if @user.image.attached? %>
+      <%= image_tag(rails_blob_path(@user.image), class:"user-show-image") %>
+    <% else %>
+      <i class="far fa-user fa-user-show"></i>
+    <% end %>
+    <div class="user-show-name">
+      <%= @user.name %>
+    </div>
+    <% if user_signed_in? %> 
+      <% if @user == current_user %>
+        <a href="/users/<%= @user.id %>/edit" class="user-edit-btn">プローフィール編集</a>
+      <% else %>
+      <% end %>
+    <% else %>
+    <% end %>
+    <a href="/users/<%= @user.id %>/posts" class="user-edit-btn"><%=@user.name%>さんの全ての投稿を見る</a>
+  </div>
+  <div class="row">
+    <div class="show-follow">
+      <div>フォロワー数</div>
+      <a href="/" class="cnt">10</a>
+      <div class="person">人</div>
+    </div>
+    <div class="show-follow">
+      <div>フォロー中</div>
+      <a href="/" class="cnt">10</a>
+      <div class="person">人</div>
+    </div>
+  </div>
+</div>

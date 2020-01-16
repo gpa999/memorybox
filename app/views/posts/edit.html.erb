@@ -1,8 +1,10 @@
 <div class="post-new-back">
   <h2 class="post-new-title">編集ページ</h2><br/>
   <div class="edit-description">編集内容を書き込んでください。</div>
-  <%= form_for @post do |f| %>
+  <%= form_for(@post, url: post_path(@post), html: {method: "patch"}) do |f| %>
     <h4>：画像</h4>
+    <div class="current-image-description">(現在の画像)</div>
+    <%= image_tag(rails_blob_path(@post.image), class:"current-image") %>
     <div id="img_field" onClick="$('#file').click()" >
       <i class="fas fa-image"></i><i class="fas fa-file-upload add"></i>
     </div>

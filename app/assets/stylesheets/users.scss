@@ -49,6 +49,7 @@
         color: #000;
         transition: .4s;
         background: rgba(128,128,128,0.5);
+        cursor: pointer;
     }
     .register:hover {
         color:#0099e3;
@@ -84,6 +85,7 @@
         color: #000;
         transition: .4s;
         background: rgba(128,128,128,0.5);
+        cursor: pointer;
     }
     .log-in:hover {
         color:#0099e3;
@@ -108,6 +110,189 @@
         border-right: solid 1px #0099e3;
         border-bottom: solid 1px #0099e3;
         right: 0;
+    }
+
+    .user-show-back {
+        background:#ffffff;
+        width:40vw;
+        padding-bottom:3vw;
+        margin:auto;
+        margin-top:5vh;
+        margin-bottom:10vh;
+        border-radius:10px;
+    }
+    .fa-user-show {
+        border-radius:50%;
+        background:#bbbbbb;
+        width:6vw;
+        height:6vw;;
+        padding:2vw;;
+        font-size:6vw;;
+        margin-top:2vw;
+        color:#ffffff;
+    }
+    .user-show-image {
+        border-radius:50%;
+        width:8.5vw;
+        height:8.5vw;;
+        margin-top:2vw;
+    }
+    .user-profile {
+        text-align:center;
+    }
+    .user-show-name {
+        margin-top:1.5vw;
+        font-size:3.5vw;
+    }
+
+    .user-edit-btn {
+        display:block;
+        margin-top:2vw;
+        font-size:1.2vw;
+        color:#6496e8;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .row {
+        display:flex;
+    }
+    .show-follow {
+        margin-top:3vw;
+        width:100%;
+        text-align:center;
+    }
+    .cnt {
+        display:block;
+        margin-top:1vw;
+        font-size:2vw;
+        color:#6496e8;
+    }
+
+    .person {
+        margin-top:1vw;
+    }
+
+    .user-edit-back {
+        border:solid 3px #ffffff;
+        border-radius:5px;
+        width:50vw;
+        padding-bottom:3vw;
+        margin:auto;
+        margin-top:5vh;
+    }
+
+      h4 {
+        font-family: 'Noto Serif JP', serif;
+      }
+
+    .user-edit-top {
+        margin:auto;
+        border-bottom:double 5px #6496e8;
+        width:200px;
+        text-align:center;
+        margin-top:2vw;
+    }
+
+    .current-user-image-top {
+        display:inline-block;
+        vertical-align:top;
+    }
+
+    .current-user-image-word {
+        margin-top:1vw;
+        margin-right:2vw;
+        color:#333333;
+        float:right;
+    }
+
+    .fa-user-change {
+        border-radius:50%;
+        background:#ffffff;
+        width:4vw;
+        height:4vw;;
+        padding:1.5vw;;
+        font-size:4vw;;
+        float:right;
+        color:#666666;
+        text-align:center;
+        margin-right:2vw;
+    }
+
+    .user-change-image {
+        border-radius:50%;
+        width:6vw;
+        height:6vw;
+        font-size:4vw;
+        float:right;
+        margin-right:2vw;
+    }
+
+    #user_img_field {
+        font-size: 15px;
+        margin-left:10vw;
+        margin-top:5vw;
+        border: solid 1px #6496e8;
+        color: #666;
+        position: relative;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+        text-align:center;
+        border-radius:50%;
+
+      }
+      
+      #user_img_field i {
+        font-size: 80px;
+        color: #aaa;
+        line-height: 150px;
+        transition: 0.3s ease-out;
+      }
+      
+      #user_img_field:hover {
+        background-color: #6496e8;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }
+      
+      #user_img_field:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      .user-edit-field {
+          text-align:center;
+          margin-top:2vw;
+      }
+
+      .user-edit-name {
+          width:35vw;
+          height:5vw;
+          border-radius:5px;
+          border:none;
+          font-size:2vw;
+      }
+      .user-profile-change-btn {
+          margin-top:3vw;
+          width: 90px;
+          height: 40px;
+          border-radius: 5px;
+          background:#6496e8;
+          color:#ffffff;
+          border:none;
+          cursor: pointer;
+      }
+
+      .user-profile-change-btn:hover {
+        background:#28b9ff;
     }
 }
 @media screen and (max-width: 600px) { 
@@ -217,6 +402,189 @@
         border-right: solid 1px #0099e3;
         border-bottom: solid 1px #0099e3;
         right: 0;
+    }
+
+    .user-show-back {
+        background:#ffffff;
+        width:80vw;
+        padding-bottom:8vh;
+        margin:auto;
+        margin-top:8vh;
+        border-radius:10px;
+    }
+    .fa-user-show {
+        border-radius:50%;
+        background:#bbbbbb;
+        width:60px;
+        height:60px;;
+        padding:20px;
+        font-size:60px;;
+        margin-top:5vh;
+        color:#ffffff;
+    }
+    .user-show-image {
+        border-radius:50%;
+        width:85px;
+        height:85px;;
+        margin-top:5vw;
+    }
+    .user-profile {
+        text-align:center;
+    }
+    .user-show-name {
+        margin-top:3vh;;
+        font-size:30px;;
+    }
+
+    .user-edit-btn {
+        display:block;
+        margin-top:2vh;
+        font-size:15px;
+        color:#6496e8;
+        font-family: 'Noto Serif JP', serif;
+    }
+    .row {
+        display:flex;
+    }
+    .show-follow {
+        margin-top:6vh;;
+        width:100%;
+        text-align:center;
+    }
+    .cnt {
+        display:block;
+        margin-top:2vh;
+        font-size:20px;
+        color:#6496e8;
+    }
+
+    .person {
+        margin-top:2vh;
+    }
+
+    .user-edit-back {
+        border:solid 3px #ffffff;
+        border-radius:5px;
+        width:80vw;
+        padding-bottom:10vw;
+        margin:auto;
+        margin-top:5vh;
+    }
+
+    .user-edit-back h4 {
+        font-family: 'Noto Serif JP', serif;
+        font-size:17px;
+      }
+
+    .user-edit-top {
+        margin:auto;
+        border-bottom:double 5px #6496e8;
+        width:180px;
+        text-align:center;
+        margin-top:6vw;
+        font-size: 20px;
+    }
+
+    .current-user-image-top {
+        display:inline-block;
+        vertical-align:top;
+    }
+
+    .current-user-image-word {
+        margin-top:1vw;
+        margin-right:2vw;
+        color:#333333;
+        float:right;
+    }
+
+    .fa-user-change {
+        border-radius:50%;
+        background:#ffffff;
+        width:40px;
+        height:40px;
+        padding:10px;
+        font-size:35px;
+        float:right;
+        color:#666666;
+        text-align:center;
+        margin-right:5vw;
+    }
+
+    .user-change-image {
+        border-radius:50%;
+        width:60px;
+        height:60px;
+        float:right;
+        margin-right:5vw;
+    }
+
+    #user_img_field {
+        font-size: 15px;
+        margin:auto;
+        margin-top:18vw;
+        border: solid 1px #6496e8;
+        color: #666;
+        position: relative;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 120px;
+        height: 120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+        text-align:center;
+        border-radius:50%;
+
+      }
+      
+      #user_img_field i {
+        font-size: 60px;
+        color: #aaa;
+        line-height: 120px;
+        transition: 0.3s ease-out;
+      }
+      
+      #user_img_field:hover {
+        background-color: #6496e8;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }
+      
+      #user_img_field:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      .user-edit-field {
+          text-align:center;
+          margin-top:5vw;
+      }
+
+      .user-edit-name {
+          width:60vw;
+          height:10vw;
+          border-radius:5px;
+          border:none;
+          font-size:6vw;
+      }
+      .user-profile-change-btn {
+          margin-top:8vw;
+          width: 80px;
+          height: 35px;
+          border-radius: 5px;
+          background:#6496e8;
+          color:#ffffff;
+          border:none;
+          cursor: pointer;
+      }
+
+      .user-profile-change-btn:hover {
+        background:#28b9ff;
     }
 }
 .forgot-case {

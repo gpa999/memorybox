@@ -31,6 +31,13 @@
       </div>
     <% end %>
   </header>
+
+  <div class="mobile-search-field">
+    <%= form_tag(root_path,:method => 'get') do %>
+      <%= text_field_tag :search ,"",{class:"search-mobile-text search-mobile-contents"}%>
+      <%= submit_tag '検索', :name => nil ,class:"search-mobile-btn search-mobile-contents"%>
+    <% end %>
+  </div>
  
   <div class="container">
     <div class="main">
@@ -38,7 +45,32 @@
         <%= yield %>
       </body>
     </div>
-    <div class="side">side</div>
+    <div class="side">
+      <div class="search-field">
+        <%= form_tag(root_path,:method => 'get') do %>
+          <%= text_field_tag :search ,"",{class:"search-text search-contents"}%>
+          <%= submit_tag '検索', :name => nil ,class:"search-btn search-contents"%>
+        <% end %>
+      </div>
+      <% if user_signed_in? %>
+        <div class="user-info">
+          <% if current_user.image.attached? %>
+            <%= image_tag(rails_blob_path(current_user.image), class:"user-main-image") %>
+          <% else %>
+            <i class="far fa-user fa-user-main"></i>
+          <% end %>
+          <div class="user-info-name">
+            <a href="/users/<%= current_user.id %>" class="info-btn"><%= current_user.name %></a>
+          </div>
+        </div><br/>
+      <% end %>
+      <a href="/" class="side-menu">トップページ</a>
+      <% if user_signed_in? %>
+        <a href="/users/<%= current_user.id %>" class="side-menu">プロフィールページ</a>
+        <a href="/users/<%= current_user.id %>/edit" class="side-menu">プロフィール編集</a>
+        <a href="/users/<%= current_user.id %>/posts" class="side-menu">あなたの投稿一覧</a>
+      <% end %>
+    </div>
   </div>
  
   <footer>footer</footer>
