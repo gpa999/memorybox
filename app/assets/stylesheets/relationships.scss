@@ -1,0 +1,56 @@
+// Place all the styles related to the relationships controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@media screen and (min-width: 600px) {
+    .follow-btn-block {
+        margin-top:2vw;
+    }
+
+    .follow-btn {
+        cursor: pointer;
+        padding:5px;
+        border-radius:3px;
+    }
+
+    .btn-danger {
+        background:#9dceff;
+        color:#ffffff; 
+    }
+
+    .btn-danger:hover {
+        background:#cee7ff;
+    }
+
+    .btn-primary {
+        background:#28b9ff;
+        color:#ffffff;
+    }
+
+    .btn-primary:hover {
+        background:#9bdeff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .follow-btn-block {
+        margin-top:4vw;
+    }
+
+    .follow-btn {
+        padding:5px;
+        border-radius:3px;
+        font-size:12px;
+    }
+
+    .btn-danger {
+        background:#9dceff;
+        color:#ffffff; 
+    }
+
+    .btn-primary {
+        background:#28b9ff;
+        color:#ffffff;
+    }
+
+}

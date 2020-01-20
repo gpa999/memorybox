@@ -4,12 +4,41 @@
     <h1><%= @post.title %></h1>
   </div>
   <div class="post-show-content post-show-text">
-    <%= @post.text %>
+    <%=simple_format(@post.text)%>
   </div>
   <% if user_signed_in? %>
     <% if @post.user == current_user%>
       <a href="/posts/<%= @post.id %>/edit" class="post-show-edit-btn">編集</a>
       <a href="/posts/<%= @post.id %>/destroy_confirm" class="post-show-destroy-btn">削除</a>
+    <% else %>
+      <h2 class="post-user-name-top">投稿者</h2>
+      <div class="post-user-info">
+        <% if @post.user.image.attached? %>
+          <%= image_tag(rails_blob_path(@post.user.image), class:"user-main-image") %>
+        <% else %>
+          <i class="far fa-user fa-user-main"></i>
+        <% end %>
+        <div class="user-info-name">
+          <a href="/users/<%= @post.user.id %>" class="info-btn"><%= @post.user.name %></a>
+        </div>
+      </div>
     <% end %>
+  <% else %>
+    <h2 class="post-user-name-top">投稿者</h2>
+    <div class="post-user-info">
+      <% if @post.user.image.attached? %>
+        <%= image_tag(rails_blob_path(@post.user.image), class:"user-main-image") %>
+      <% else %>
+        <i class="far fa-user fa-user-main"></i>
+      <% end %>
+      <div class="user-info-name">
+        <a href="/users/<%= @post.user.id %>" class="info-btn"><%= @post.user.name %></a>
+      </div>
+    </div>
   <% end %>
+  <h2 class="post-user-name-top">コメント</h2>
+  <% unless @post.user == current_user %>
+    <%= render partial: 'comments/form', locals: { post: @post, comment:@comment } %>
+  <% end %>
+  <%= render partial: 'comments/index', collection: @comments, as: "comment" %>
 </div>

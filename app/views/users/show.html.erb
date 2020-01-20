@@ -12,6 +12,7 @@
       <% if @user == current_user %>
         <a href="/users/<%= @user.id %>/edit" class="user-edit-btn">プローフィール編集</a>
       <% else %>
+        <div class="follow-btn-block"><%= render partial: 'relationships/follow_button', locals: { user: @user } %></div>
       <% end %>
     <% else %>
     <% end %>
@@ -19,13 +20,13 @@
   </div>
   <div class="row">
     <div class="show-follow">
-      <div>フォロワー数</div>
-      <a href="/" class="cnt">10</a>
+      <div>フォロワー</div>
+      <a href="/users/<%= @user.id %>/follower_index" class="cnt"><%=@user.followers.count%></a>
       <div class="person">人</div>
     </div>
     <div class="show-follow">
       <div>フォロー中</div>
-      <a href="/" class="cnt">10</a>
+      <a href="/users/<%= @user.id %>/following_index" class="cnt"><%=@user.followings.count%></a>
       <div class="person">人</div>
     </div>
   </div>

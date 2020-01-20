@@ -80,6 +80,27 @@ body {
         text-align:center;
       }
 
+      .post-user-name-top {
+        margin-left:5vw;
+        margin-top:60px;
+        font-family: 'Noto Serif JP', serif;
+        color: #333333;
+        width:100px;
+        border-bottom:solid 2px #6496e8;
+        text-align:center;
+
+      }
+
+      .post-user-info {
+        background:#bbbbbb;
+        width:20vw;
+        padding-bottom:1.5vw;
+        margin-left:5.5vw;;
+        margin-top:30px;
+        border-radius:10px;
+        text-align:center;
+      }
+
       .search-field {
         background:#bbbbbb;
         width:20vw;
@@ -195,7 +216,7 @@ body {
       }
       .main {
         width: 100%;
-        min-height: 80vh;
+        padding-bottom:10vh;
       }
       .side {
         width: 100%;
@@ -205,6 +226,7 @@ body {
       footer {
         background: #000000;
         color: #ffffff;
+        text-align:center;
       }
 
       .user-info {
@@ -213,6 +235,27 @@ body {
         padding-bottom:7vw;
         margin:auto;
         margin-top:5vh;
+        border-radius:10px;
+        text-align:center;
+      }
+
+      .post-user-name-top {
+        margin-left:5vw;
+        margin-top:60px;
+        font-family: 'Noto Serif JP', serif;
+        color: #333333;
+        width:100px;
+        border-bottom:solid 2px #6496e8;
+        text-align:center;
+  
+      }
+  
+      .post-user-info {
+        background:#bbbbbb;
+        width:80vw;
+        padding-bottom:7vw;
+        margin:auto;
+        margin-top:30px;
         border-radius:10px;
         text-align:center;
       }
@@ -242,11 +285,6 @@ body {
       color:#184da3;
       text-decoration: none;
       border-bottom:solid 2px #184da3;
-    }
-
-    .info-btn:hover {
-      color:#00acff;
-      border-bottom:solid 2px #00acff;
     }
 
     .side-menu {

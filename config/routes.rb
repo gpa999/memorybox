@@ -6,8 +6,21 @@ Rails.application.routes.draw do
     member do
       get :destroy_confirm
     end
+
+    resources :comments, only: [:create]
   end
   resources :users do 
     resources :posts, only: :index
+    collection do
+      get :followed_posts
+    end
+
+    member do
+      get :follower_index
+      get :following_index
+    end
   end
+
+  resources :relationships, only: [:create, :destroy]
+
 end

@@ -294,6 +294,66 @@
       .user-profile-change-btn:hover {
         background:#28b9ff;
     }
+
+    .follow-user-back {
+        background:#ffffff;
+        width:40vw;
+        min-height:10vh;
+        margin:auto;
+        margin-top:5vh;
+        border-radius:10px;
+        padding-top:2vh;
+        padding-bottom:5vh;
+    }
+
+    .follower-title {
+        color: #6496e8;
+        margin: auto;
+        border-bottom: double 5px #6496e8;
+        width: 150px;
+        padding-left: 10px;
+        text-align:center;
+    }
+
+    .follow-user {
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    .fa-user-follow {
+        background:#bbbbbb;
+        width:60px;
+        height:60px;
+        padding:15px;
+        font-size:60px;
+        color:#ffffff;
+        border-radius:50%;
+        text-align:center;
+        margin-left:2vw;
+    }
+
+    .follow-user-image {
+        width:90px;
+        height:90px;
+        border-radius:50%;
+        margin-left:2vw;
+    }
+
+    .follow-user-name {
+        font-size:25px;
+        margin-left:1vw;
+        color:#333333;
+        text-decoration:none;
+    }
+
+    .follow-user-name:hover {
+        color:#6496e8;
+        border-bottom:solid 2px #6496e8;
+    }
+
+    .user-follow-block {
+        margin-top:3vh;
+    }
 }
 @media screen and (max-width: 600px) { 
     .sign-up {
@@ -585,6 +645,61 @@
 
       .user-profile-change-btn:hover {
         background:#28b9ff;
+    }
+
+    .follow-user-back {
+        background:#ffffff;
+        width:80vw;
+        min-height:10vh;
+        margin:auto;
+        margin-top:5vh;
+        border-radius:10px;
+        padding-top:2vh;
+        padding-bottom:5vh;
+    }
+
+    .follower-title {
+        color: #6496e8;
+        margin: auto;
+        border-bottom: double 5px #6496e8;
+        width: 150px;
+        padding-left: 10px;
+        text-align:center;
+    }
+
+    .follow-user {
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    .fa-user-follow {
+        background:#bbbbbb;
+        width:40px;
+        height:40px;
+        padding:10px;
+        font-size:40px;
+        color:#ffffff;
+        border-radius:50%;
+        text-align:center;
+        margin-left:2vw;
+    }
+
+    .follow-user-image {
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        margin-left:2vw;
+    }
+
+    .follow-user-name {
+        font-size:25px;
+        margin-left:3vw;
+        color:#333333;
+        text-decoration:none;
+    }
+
+    .user-follow-block {
+        margin-top:3vh;
     }
 }
 .forgot-case {

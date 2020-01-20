@@ -1,0 +1,137 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@media screen and (min-width: 600px) {
+  .comment-text-form {
+    width:40vw;
+    height:30px;
+    margin-left:5vw;
+    border-radius:10px;
+    border:none;
+    margin-top:10px;
+  }
+
+  .comment-btn {
+    margin-top:12px;
+    margin-left:1vw;
+    height:33px;
+    width:55px;
+    border-radius:5px;
+    font-family: 'Noto Serif JP', serif;
+    background:#666666;
+    color:#ffffff;
+    cursor: pointer;
+  }
+
+  .comment-btn:hover {
+    background:#999999;
+  }
+
+  .comment-form {
+    display:inline-block;
+    vertical-align:middle;
+  }
+
+  .comment-block {
+    margin-left:4vw;
+    padding-left:1vw;
+    margin-top:2vw;
+    border-top:solid 1px #666666;
+    width:55vw;
+  }
+
+  .user-comment-image {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin-top:5px;
+  }
+
+  .fa-user-comment {
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    margin-top:5px;
+    background:#ffffff;
+    color:#333333;
+    padding:5px; 
+    text-align:center;
+    font-size:18px;
+  }
+
+  .comment-user {
+    display:inline-block;
+    vertical-align:middle;
+  }
+
+  .comment-text {
+    color:#333333;
+    margin-left:2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .comment-text-form {
+        width:66vw;
+        height:20px;
+        margin-left:5vw;
+        border-radius:5px;
+        border:none;
+        margin-top:3px;
+      }
+    
+      .comment-btn {
+        margin-top:3px;
+        margin-left:1vw;
+        height:25px;
+        width:45px;
+        font-size:15px;
+        border-radius:5px;
+        font-family: 'Noto Serif JP', serif;
+        background:#666666;
+        color:#ffffff;
+        cursor: pointer;
+      }
+    
+      .comment-form {
+        display:inline-block;
+        vertical-align:middle;
+      }
+    
+      .comment-block {
+        margin-left:4vw;
+        padding-left:1vw;
+        margin-top:10vw;
+        border-top:solid 1px #666666;
+        width:80vw;
+      }
+    
+      .user-comment-image {
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        margin-top:5px;
+      }
+
+      .fa-user-comment {
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        margin-top:5px;
+        background:#ffffff;
+        color:#333333;
+        padding:5px; 
+        text-align:center;
+        font-size:18px;
+      }
+    
+      .comment-user {
+        display:inline-block;
+        vertical-align:middle;
+      }
+    
+      .comment-text {
+        color:#333333;
+        margin-left:4vw;
+      }
+}

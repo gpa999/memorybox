@@ -1,0 +1,15 @@
+<div class="follow-user-back">
+  <h2 class="follower-title">フォロワー</h2>
+  <% @users.each do |user| %>
+    <div class="user-follow-block">
+      <% if user.image.attached? %>
+        <%= image_tag(rails_blob_path(user.image), class:"follow-user-image follow-user") %>
+      <% else %>
+        <i class="far fa-user fa-user-follow follow-user"></i>
+      <% end %>
+      <a href="/users/<%=user.id%>" class="follow-user-name follow-user">
+        <%= user.name %>
+      </a>
+    </div>
+  <% end %>
+</div>
